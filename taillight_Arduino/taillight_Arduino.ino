@@ -26,7 +26,7 @@ void setup() {
 void loop() {
   // Check if the taillight is ON or OFF
   ledReading = getLedReading();
-  if(ledReading > 600){
+  if(ledReading == 0){
     ledIsOn = false;
   }else{
     ledIsOn = true;
